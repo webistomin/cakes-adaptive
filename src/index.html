@@ -14,6 +14,9 @@
     <div class="page-header__logo">
       <span class="page-header__logotype">Cakes</span>
     </div>
+    <button class="page-header__toggler">
+      <span></span><span></span><span></span>
+    </button>
     <nav class="main-nav main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="#" class="main-nav__link">Наши торты</a></li>
@@ -51,20 +54,26 @@
         <div class="cakes__item cakes__item--big">
           <span class="cakes__category">Классические</span>
           <span class="cakes__counter">24 вида</span>
-          <img src="#" alt="Классический торт" class="cakes__img">
+          <picture>
+            <img src="img/classic-cake.jpg" srcset="img/classic-cake@2x.jpg 2x" alt="Классический торт" class="cakes__img">
+          </picture>
           <a href="#" class="cakes__link">Смотреть -></a>
         </div>
         <div class="cakes__column">
           <div class="cakes__item">
             <span class="cakes__category">Муссовые</span>
             <span class="cakes__counter">12 видов</span>
-            <img src="#" alt="Классический торт" class="cakes__img">
+            <picture>
+              <img src="img/mousse-cake.jpg" srcset="img/mousse-cake@2x.jpg 2x" alt="Муссовый торт" class="cakes__img">
+            </picture>
             <a href="#" class="cakes__link">-></a>
           </div>
           <div class="cakes__item">
             <span class="cakes__category">Свадебные</span>
             <span class="cakes__counter">20 видов</span>
-            <img src="#" alt="Классический торт" class="cakes__img">
+            <picture>
+              <img src="img/wedding-cake.jpg" srcset="img/wedding-cake@2x.jpg 2x" alt="Свадебный торт" class="cakes__img">
+            </picture>
             <a href="#" class="cakes__link">-></a>
           </div>
         </div>
@@ -74,20 +83,26 @@
           <div class="cakes__item">
             <span class="cakes__category">Мужчинам</span>
             <span class="cakes__counter">12 видов</span>
-            <img src="#" alt="Классический торт" class="cakes__img">
+            <picture>
+              <img src="img/man-cake.jpg" srcset="img/man-cake@2x.jpg 2x" alt="Мужской торт" class="cakes__img">
+            </picture>
             <a href="#" class="cakes__link">-></a>
           </div>
           <div class="cakes__item">
             <span class="cakes__category">Женщинам</span>
             <span class="cakes__counter">16 видов</span>
-            <img src="#" alt="Классический торт" class="cakes__img">
+            <picture>
+              <img src="img/woman-cake.jpg" srcset="img/woman-cake@2x.jpg 2x" alt="Женский торт" class="cakes__img">
+            </picture>
             <a href="#" class="cakes__link">-></a>
           </div>
         </div>
         <div class="cakes__item cakes__item--big">
           <span class="cakes__category">Детские</span>
           <span class="cakes__counter">18 видов</span>
-          <img src="#" alt="Классический торт" class="cakes__img">
+          <picture>
+            <img src="img/children-cake.jpg" srcset="img/children-cake@2x.jpg 2x" alt="Детский торт" class="cakes__img">
+          </picture>
           <a href="#" class="cakes__link">-></a>
         </div>
       </div>
@@ -107,7 +122,9 @@
           <ul class="order__list order__list--first">
             <li class="order__item">
               <figure class="order__pic">
-                <img src="#" alt="#" class="order__img">
+                <picture>
+                  <img src="img/filling-cake.jpg" srcset="img/filling-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
+                </picture>
                 <figcaption class="order__counter">1/12</figcaption>
               </figure>
               <div class="order__info">
@@ -119,7 +136,9 @@
             </li>
             <li class="order__item">
               <figure class="order__pic">
-                <img src="#" alt="#" class="order__img">
+                <picture>
+                  <img src="img/filling-cake.jpg" srcset="img/filling-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
+                </picture>
                 <figcaption class="order__counter">1/12</figcaption>
               </figure>
               <div class="order__info">
@@ -131,7 +150,9 @@
             </li>
             <li class="order__item">
               <figure class="order__pic">
-                <img src="#" alt="#" class="order__img">
+                <picture>
+                  <img src="img/filling-cake.jpg" srcset="img/filling-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
+                </picture>
                 <figcaption class="order__counter">1/12</figcaption>
               </figure>
               <div class="order__info">
@@ -143,7 +164,9 @@
             </li>
             <li class="order__item">
               <figure class="order__pic">
-                <img src="#" alt="#" class="order__img">
+                <picture>
+                  <img src="img/filling-cake.jpg" srcset="img/filling-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
+                </picture>
                 <figcaption class="order__counter">1/12</figcaption>
               </figure>
               <div class="order__info">
@@ -209,12 +232,16 @@
         </div>
         <ul class="order__list order__list--second">
           <li class="order__item">
-            <img src="#" alt="#" class="order__img">
+            <picture>
+              <img src="img/platter-cake.jpg" srcset="img/platter-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
+            </picture>
             <span class="order__name">Ягодные ассорти</span>
             <span class="order__weight">700 руб/кг</span>
           </li>
           <li class="order__item">
-            <img src="#" alt="#" class="order__img">
+            <picture>
+              <img src="img/marshmallow-cake.jpg" srcset="img/marshmallow-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
+            </picture>
             <span class="order__name">Маршмаллоу</span>
             <span class="order__weight">600 руб/кг</span>
           </li>
@@ -278,7 +305,9 @@
         </div>
       </div>
       <div class="about__column">
-        <img src="#" alt="#" class="about__img">
+        <picture>
+          <img src="img/about-us.jpg" srcset="img/about-us@2x.jpg 2x" alt="О нас" class="about__img">
+        </picture>
       </div>
     </div>
   </section>
@@ -286,7 +315,9 @@
   <section class="quotes">
     <div class="container">
       <p class="quotes__quote">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</p>
-      <img src="#" alt="#" class="quotes__img">
+      <picture>
+        <img src="img/sign.png" srcset="img/sign@2x.png 2x" alt="Шоколадный ганаш" class="quotes__img">
+      </picture>
     </div>
   </section>
 

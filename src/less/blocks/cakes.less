@@ -3,6 +3,7 @@
   background-color: @color-bg;
 
   &__title {
+    margin-bottom: 10px;
     font-size: 24px;
     line-height: 66px;
     letter-spacing: 0.04px;
@@ -11,6 +12,7 @@
   &__item {
     min-height: 120px;
     margin-bottom: 10px;
+    background-size: cover;
 
     &--classic {
       background-image: url("../img/classic-cake-mobile.png");
@@ -37,5 +39,30 @@
     }
   }
 
+  &__category,
+  &__counter {
+    font-size: 14px;
+    font-family: Circe, sans-serif;
+    font-weight: 400;
+    color: #2d2829;
+  }
+
+  &__counter {
+    font-size: 12px;
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+    padding-top: 14px;
+    width: 100%;
+    min-height: 120px;
+    box-sizing: border-box;
+  }
 
 }

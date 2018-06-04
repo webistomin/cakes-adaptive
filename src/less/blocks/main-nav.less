@@ -1,8 +1,13 @@
 .main-nav {
-
-
+  position: absolute;
+  width: 100%;
+  
   &--closed {
-    //display: none;
+    display: none;
+  }
+
+  &--opened {
+    display: block;
   }
 
   &__link {
@@ -16,7 +21,15 @@
     text-align: center;
     background-color: #e7e7e7;
     text-transform: uppercase;
+
+  }
+
+  &__item {
     box-shadow: 0 1px 2px 0 rgba(0,0,0, 0.95);
+
+    &:nth-child(6) {
+      box-shadow: 0 -1px 0px 0 rgba(0, 0, 0, 0.15)
+    }
 
     &--hidden {
       display: none;

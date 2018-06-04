@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -22,26 +22,30 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Заказать красивый торт по фото картинкам в Москве от производителя и узнать сколько стоит заказ можно на нашем сайте. Купить торт в кондитерской или с доставкой недорого!" />
   <title>Торты на заказ – ручная работа</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="page-header">
   <div class="container">
-    <div class="page-header__logo">
-      <span class="page-header__logotype">Cakes</span>
+    <div class="page-header__inner">
+      <div class="page-header__logo">
+        <span class="page-header__logotype">Cakes</span>
+      </div>
+      <button class="page-header__toggler">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <button class="page-header__toggler">
-      <span></span><span></span><span></span>
-    </button>
     <nav class="main-nav main-nav--closed">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Наши торты</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Индивидуальный заказ</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Как заказать</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+        <li class="main-nav__item"><a href="#cakes" class="main-nav__link">Наши торты</a></li>
+        <li class="main-nav__item"><a href="#order" class="main-nav__link">Индивидуальный заказ</a></li>
+        <li class="main-nav__item"><a href="#reviews" class="main-nav__link">Отзывы</a></li>
+        <li class="main-nav__item"><a href="#about" class="main-nav__link">О нас</a></li>
+        <li class="main-nav__item"><a href="#delivery" class="main-nav__link">Как заказать</a></li>
+        <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
         <li class="main-nav__item"><a href="tel:+79068999296" class="main-nav__link">+7 906 899 92 96</a></li>
       </ul>
     </nav>
@@ -65,7 +69,7 @@
     </div>
   </section>
 
-  <section class="cakes">
+  <section class="cakes" id="cakes">
     <div class="container">
       <div class="cakes__list">
         <div class="cakes__item cakes__item--big">
@@ -126,7 +130,7 @@
     </div>
   </section>
 
-  <section class="order">
+  <section class="order" id="order">
     <div class="container">
       <h2 class="order__title title">Индивидуальный заказ</h2>
       <h3 class="order__subtitle subtitle">Соберите торт в 3 шага</h3>
@@ -289,7 +293,7 @@
     </div>
   </section>
 
-  <section class="reviews">
+  <section class="reviews" id="reviews">
     <div class="container">
       <h2 class="reviews__title title">Отзывы</h2>
       <ul class="reviews__list">
@@ -304,7 +308,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about__column">
         <h2 class="about__title title">О нас</h2>
@@ -368,7 +372,7 @@
     </div>
   </section>
 
-  <section class="delivery">
+  <section class="delivery" id="delivery">
     <div class="container">
       <div class="delivery__info">
         <h2 class="delivery__title title">Как заказать</h2>
@@ -390,7 +394,7 @@
     </div>
   </section>
 
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container">
       <h2 class="contacts__title title">Контакты</h2>
       <h3 class="contacts__subtitle subtitle">Остались вопросы?</h3>

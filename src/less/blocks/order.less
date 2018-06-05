@@ -8,6 +8,7 @@
   }
 
   &__step {
+    position: relative;
     box-sizing: border-box;
     min-height: 430px;
     background-color: #ffffff;
@@ -38,7 +39,8 @@
   &__pic {
     position: relative;
     margin: 0;
-    max-width: 241px;
+    //max-width: 241px;
+    text-align: center;
   }
 
   &__counter {
@@ -109,6 +111,10 @@
     width: 50px;
     display: flex;
     justify-content: space-between;
+
+    &--step-two {
+      top: 230px;
+    }
   }
 
   &__dot {
@@ -125,5 +131,46 @@
 
   &__slider {
     position: relative;
+  }
+
+  &__size {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:nth-child(n+2) {
+      display: none;
+    }
+  }
+
+  &__weight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: Circe, sans-serif;
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #2f2f2f;
+  }
+
+  &__length,
+  &__amount {
+    display: block;
+    font-family: Circe, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2f2f2f;
+  }
+
+  &__length {
+    margin-top: 70px;
+  }
+
+  &__amount {
+    margin-bottom: 30px;
   }
 }

@@ -131,7 +131,7 @@
 
   <section class="order" id="order">
     <div class="container">
-      <h2 class="order__title title">Индивидуальный заказ</h2>
+      <h2 class="order__title title">Индивидуальный <br> заказ</h2>
       <h3 class="order__subtitle subtitle">Соберите торт в 3 шага</h3>
       <div class="order__step">
         <div class="order__info">
@@ -143,6 +143,7 @@
             <li class="order__item">
               <figure class="order__pic">
                 <picture>
+                  <source media="(min-width: 320px)" srcset="img/filling-cake-mobile.png 1x, img/filling-cake-mobile@2x.png 2x">
                   <img src="img/filling-cake.jpg" srcset="img/filling-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
                 </picture>
                 <figcaption class="order__counter">1/12</figcaption>
@@ -150,55 +151,13 @@
               <div class="order__info">
                 <h4 class="order__name">Шоколадный ганаш</h4>
                 <p class="order__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-                <span class="order__price">1000 Руб/кг</span>
-                <button class="order__link" type="button">Выбрать</button>
-              </div>
-            </li>
-            <li class="order__item">
-              <figure class="order__pic">
-                <picture>
-                  <img src="img/filling-cake.jpg" srcset="img/filling-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
-                </picture>
-                <figcaption class="order__counter">1/12</figcaption>
-              </figure>
-              <div class="order__info">
-                <h4 class="order__name">Шоколадный ганаш</h4>
-                <p class="order__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-                <span class="order__price">1000 Руб/кг</span>
-                <button class="order__link" type="button">Выбрать</button>
-              </div>
-            </li>
-            <li class="order__item">
-              <figure class="order__pic">
-                <picture>
-                  <img src="img/filling-cake.jpg" srcset="img/filling-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
-                </picture>
-                <figcaption class="order__counter">1/12</figcaption>
-              </figure>
-              <div class="order__info">
-                <h4 class="order__name">Шоколадный ганаш</h4>
-                <p class="order__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-                <span class="order__price">1000 Руб/кг</span>
-                <button class="order__link" type="button">Выбрать</button>
-              </div>
-            </li>
-            <li class="order__item">
-              <figure class="order__pic">
-                <picture>
-                  <img src="img/filling-cake.jpg" srcset="img/filling-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
-                </picture>
-                <figcaption class="order__counter">1/12</figcaption>
-              </figure>
-              <div class="order__info">
-                <h4 class="order__name">Шоколадный ганаш</h4>
-                <p class="order__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-                <span class="order__price">1000 Руб/кг</span>
-                <button class="order__link" type="button">Выбрать</button>
+                <span class="order__price">1000 руб/кг</span>
+                <button class="order__link btn" type="button">Выбрать</button>
               </div>
             </li>
           </ul>
           <ul class="order__pagination">
-            <li class="order__dot"></li>
+            <li class="order__dot order__dot--active"></li>
             <li class="order__dot"></li>
             <li class="order__dot"></li>
             <li class="order__dot"></li>

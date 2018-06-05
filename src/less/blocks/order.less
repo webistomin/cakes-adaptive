@@ -1,0 +1,129 @@
+.order {
+  background-color: @color-bg;
+  padding-top: 40px;
+
+  &__title {
+    font-size: 24px;
+    letter-spacing: 0.04px;
+  }
+
+  &__step {
+    box-sizing: border-box;
+    min-height: 430px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  &__headline {
+    font-family: 'PlayFairDisplay', serif;
+    color: @color-main;
+    font-size: 30px;
+    line-height: 62px;
+    letter-spacing: 0.05px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+
+  &__caption {
+    font-family: 'PlayFairDisplay', serif;
+    color: @color-main;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.07px;
+    font-weight: 700;
+  }
+
+  &__pic {
+    position: relative;
+    margin: 0;
+    max-width: 241px;
+  }
+
+  &__counter {
+    position: absolute;
+    bottom: 0;
+    right: 7px;
+    font-family: Circe, sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+  }
+
+  &__img {
+    vertical-align: top;
+  }
+
+  &__name {
+    font-family: Circe, sans-serif;
+    font-weight: 700;
+    color: #2f2f2f;
+    letter-spacing: 0.03px;
+    font-size: 16px;
+    line-height: 54px;
+    margin: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    font-family: Circe, sans-serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    font-weight: 400;
+  }
+
+  &__price {
+    display: block;
+    text-align: center;
+    font-family: 'PlayFairDisplay', serif;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #2f2f2f;
+  }
+
+  &__link {
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 180px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  &__pagination {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__dot {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #dddddd;
+    border-radius: 50%;
+
+    &--active {
+      background-color: @color-main;
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+}

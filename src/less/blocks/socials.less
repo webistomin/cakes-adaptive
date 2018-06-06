@@ -7,6 +7,11 @@
     height: 36px;
     background-color: #ffffff;
     font-size: 0;
+
+    &--big {
+      width: 63px;
+      height: 63px;
+    }
   }
 
   &__item {
@@ -15,9 +20,24 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &--big {
+      margin-bottom: 0;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &__list {
     margin-left: 34px;
+
+    &--row {
+      margin-top: 10px;
+      margin-left: 0;
+      display: flex;
+    }
   }
 }

@@ -10,9 +10,28 @@
   }
 
   &__item {
+    position: relative;
     min-height: 120px;
     margin-bottom: 10px;
     background-size: cover;
+
+
+    &::before {
+      display: none;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      opacity: 0.4;
+      z-index: 0;
+    }
+
+    &:hover::before {
+      display: block;
+    }
 
     &--classic {
       background-image: url("../img/classic-cake-mobile.png");
@@ -56,6 +75,8 @@
   }
 
   &__link {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     padding-left: 14px;

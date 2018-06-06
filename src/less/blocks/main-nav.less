@@ -4,11 +4,15 @@
   z-index: 10;
 
   &--closed {
-    display: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
   }
 
   &--opened {
-    display: block;
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: transform 0.3s ease-in-out;
   }
 
   &__link {

@@ -79,4 +79,40 @@
   }
 
 
+  &__link {
+    font-family: Circe, sans-serif;
+    font-weight: 700;
+    color: #2d2829;
+    font-size: 15px;
+
+
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+
+  @media @screen-sm {
+    &__inner {
+      padding-left: 46px;
+      padding-right: 46px;
+      justify-content: flex-start;
+    }
+
+    &__logo {
+      margin-right: 26px;
+    }
+
+    &__link {
+
+
+      &--hidden {
+        margin-left: auto;
+        display: block;
+      }
+    }
+  }
+
+
 }

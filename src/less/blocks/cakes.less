@@ -14,6 +14,7 @@
     min-height: 120px;
     margin-bottom: 10px;
     background-size: cover;
+    background-color: #ffffff;
 
 
     &::before {
@@ -54,6 +55,7 @@
     }
 
     &--children {
+      background-color: #f4f3f6;
       background-image: url("../img/children-cake-mobile.png");
     }
   }
@@ -86,6 +88,13 @@
     box-sizing: border-box;
   }
 
-
-
+  @media @screen-xs {
+    &__item {
+      min-height: 150px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
 }
+

@@ -22,11 +22,47 @@
 
   &__item {
     padding-left: 42px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-family: Circe, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: @color-text
+    color: @color-text;
+    position: relative;
+
+    &::before {
+      display: block;
+      width: 33px;
+      height: 33px;
+      content: "";
+      background-color: transparent;
+      background-size: contain;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+    }
+
+    &:first-child {
+      &::before {
+        background-image: url("../img/feature-1.png");
+      }
+    }
+
+    &:last-child {
+      &::before {
+        background-image: url("../img/icon-delivery.png");
+      }
+    }
+  }
+
+  @media @screen-sm {
+    padding-top: 110px;
+
+    &__title,
+    &__subtitle {
+      text-align: left;
+    }
   }
 
 

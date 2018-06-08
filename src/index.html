@@ -145,7 +145,7 @@ To emphasise this I use inline style="display: none" -->
 
   <section class="order" id="order">
     <div class="container">
-      <h2 class="order__title title">Индивидуальный <br> заказ</h2>
+      <h2 class="order__title title">Индивидуальный <br class="order__break order__break--hidden"> заказ</h2>
       <h3 class="order__subtitle subtitle">Соберите торт в 3 шага</h3>
       <div class="order__step">
         <div class="order__info">
@@ -153,10 +153,12 @@ To emphasise this I use inline style="display: none" -->
           <span class="order__caption">Выберите начинку</span>
         </div>
         <div class="order__slider">
+          <button class="order__button" type="button"></button>
           <ul class="order__list order__list--first">
             <li class="order__item">
               <figure class="order__pic">
                 <picture>
+                  <source media="(min-width: 660px)" srcset="img/filling-cake.jpg 1x, img/filling-cake@2x.jpg 2x">
                   <source media="(min-width: 320px)" srcset="img/filling-cake-mobile.png 1x, img/filling-cake-mobile@2x.png 2x">
                   <img src="img/filling-cake.jpg" srcset="img/filling-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
                 </picture>
@@ -176,6 +178,7 @@ To emphasise this I use inline style="display: none" -->
             <li class="order__dot"></li>
             <li class="order__dot"></li>
           </ul>
+          <button class="order__button" type="button"></button>
         </div>
       </div>
       <div class="order__step">

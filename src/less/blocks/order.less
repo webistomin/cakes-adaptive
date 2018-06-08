@@ -269,6 +269,7 @@
 
     &__item {
       flex-direction: row;
+      align-items: flex-start;
 
     }
 
@@ -283,11 +284,12 @@
 
     &__info {
       margin-top: -30px;
-      margin-right: 40px;
+      width: 130px;
 
       &:nth-last-child(1) {
         margin-top: 0;
         margin-right: 0;
+        width: auto;
       }
     }
 
@@ -300,12 +302,21 @@
     }
 
     &__counter {
-      display: none;
+      position: absolute;
+      right: -278px;
+      bottom: 0;
+      color: #2f2f2f;
     }
 
     &__pic {
+      align-items: flex-end;
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: column;
+      background-color: @color-bg;
       margin-right: 25px;
       min-height: 240px;
+      min-width: 90px;
     }
 
     &__price {
@@ -316,12 +327,13 @@
     &__link {
       max-width: 135px;
       margin: 0;
-      margin-top: 20px;
+      margin-top: 11px;
       height: 43px;
     }
 
     &__name {
       line-height: initial;
+      font-size: 18px;
     }
 
     &__button {
@@ -342,6 +354,10 @@
         left: -82px;
         transform: translateY(-50%);
       }
+
+      &:last-child {
+        margin-left: 48px;
+      }
     }
 
     &__slider {
@@ -350,8 +366,6 @@
       align-items: center;
     }
 
-    &__list {
-      margin-right: 48px;
-    }
+
   }
 }

@@ -231,43 +231,47 @@ To emphasise this I use inline style="display: none" -->
           <li class="order__dot"></li>
         </ul>
       </div>
-      <div class="order__step">
+      <div class="order__step order__step--third">
         <div class="order__info">
           <span class="order__headline">03</span>
           <span class="order__caption">Оформление</span>
         </div>
-        <ul class="order__list order__list--second">
-          <li class="order__item">
-            <figure class="order__pic">
+        <div class="order__slider">
+          <button class="order__button" type="button"><--</button>
+          <ul class="order__list order__list--second">
+            <li class="order__item order__item--column">
+              <figure class="order__pic">
+                <picture>
+                  <source media="(min-width: 320px)" srcset="img/marshmallow-cake-mobile.png 1x, img/marshmallow-cake-mobile@2x.png 2x">
+                  <img src="img/platter-cake.jpg" srcset="img/platter-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
+                </picture>
+                <figcaption class="order__counter order__counter--right order__counter--dark">1/12</figcaption>
+              </figure>
+
+              <span class="order__name order__name--regular">Ягодные ассорти</span>
+              <span class="order__price">700 руб/кг</span>
+              <button class="order__link order__link--hidden btn" type="button">Выбрать</button>
+
+            </li>
+            <li class="order__item order__item--column">
               <picture>
                 <source media="(min-width: 320px)" srcset="img/marshmallow-cake-mobile.png 1x, img/marshmallow-cake-mobile@2x.png 2x">
-                <img src="img/platter-cake.jpg" srcset="img/platter-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
+                <img src="img/marshmallow-cake.jpg" srcset="img/marshmallow-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
               </picture>
-              <figcaption class="order__counter order__counter--dark">1/12</figcaption>
-            </figure>
+              <span class="order__name order__name--regular">Маршмаллоу</span>
+              <span class="order__price">600 руб/кг</span>
+              <button class="order__link order__link--hidden btn" type="button">Выбрать</button>
+            </li>
+          </ul>
+          <ul class="order__pagination order__pagination--step-three">
+            <li class="order__dot order__dot--active"></li>
+            <li class="order__dot"></li>
+            <li class="order__dot"></li>
+            <li class="order__dot"></li>
+          </ul>
+          <button class="order__button" type="button">--></button>
+        </div>
 
-            <span class="order__name order__name--regular">Ягодные ассорти</span>
-            <span class="order__price">700 руб/кг</span>
-            <button class="order__link btn" type="button">Выбрать</button>
-
-          </li>
-          <li class="order__item">
-            <picture>
-              <source media="(min-width: 320px)" srcset="img/marshmallow-cake-mobile.png 1x, img/marshmallow-cake-mobile@2x.png 2x">
-              <img src="img/marshmallow-cake.jpg" srcset="img/marshmallow-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
-            </picture>
-            <span class="order__name order__name--regular">Маршмаллоу</span>
-            <span class="order__price">600 руб/кг</span>
-            <button class="order__link btn" type="button">Выбрать</button>
-
-          </li>
-        </ul>
-        <ul class="order__pagination order__pagination--step-three">
-          <li class="order__dot order__dot--active"></li>
-          <li class="order__dot"></li>
-          <li class="order__dot"></li>
-          <li class="order__dot"></li>
-        </ul>
         <form action="#" class="order__form">
           <h3 class="order__title order__title--left title">Ваш выбор</h3>
           <div class="order__block">

@@ -20,6 +20,10 @@
     background-color: #ffffff;
     margin-bottom: 10px;
     padding: 0 20px;
+
+    &--third {
+      flex-direction: column;
+    }
   }
 
   &__headline {
@@ -275,6 +279,14 @@
       flex-direction: row;
       align-items: flex-start;
 
+
+      &--column {
+        flex-direction: column;
+      }
+
+      &:nth-child(n+2) {
+        display: block;
+      }
     }
 
     &__headline {
@@ -310,6 +322,10 @@
       right: -278px;
       bottom: 0;
       color: #2f2f2f;
+
+      &--right {
+        display: none;
+      }
     }
 
     &__pic {
@@ -386,6 +402,7 @@
       position: relative;
       display: flex;
       align-items: center;
+      justify-content: flex-end;
     }
 
     &__size {
@@ -420,6 +437,12 @@
         top: 59%;
       }
 
+    }
+
+    &__list {
+      &--second {
+        display: flex;
+      }
     }
 
 

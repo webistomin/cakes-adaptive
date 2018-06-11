@@ -327,21 +327,22 @@ To emphasise this I use inline style="display: none" -->
 
   <section class="about" id="about">
     <div class="container">
+      <h2 class="about__title title">О нас</h2>
       <div class="about__inner">
-        <h2 class="about__title title">О нас</h2>
-        <div class="about__column">
+        <div class="about__column about__column--width">
           <h3 class="about__subtitle subtitle">О кондитере</h3>
           <span class="about__desc">Кондитер – как призвание</span>
           <p class="about__text">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство. С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.</p>
           <span class="about__desc">Принцип – натуральные ингредиенты</span>
           <p class="about__text">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов. </p>
         </div>
-        <div class="about__column about__column--mobile">
+        <div class="about__column about__column--mobile about__column--pic">
           <picture>
+            <source media="(min-width: 660px)" srcset="img/about-us.png 1x, img/about-us@2x.png">
             <source media="(min-width: 320px)" srcset="img/about-us-mobile.png 1x, img/about-us-mobile@2x.png 2x">
-            <img src="img/about-us.jpg" srcset="img/about-us@2x.jpg 2x" alt="О нас" class="about__img">
+            <img src="img/about-us.png" srcset="img/about-us@2x.png 2x" alt="О нас" class="about__img">
           </picture>
-          <div class="socials">
+          <div class="socials ">
             <ul class="socials__list">
               <li class="socials__item"><a href="#" class="socials__link">
                 <svg class="socials__icon" width="20" height="20">

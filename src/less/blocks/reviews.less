@@ -94,4 +94,55 @@
       font-size: 14px;
     }
   }
+
+  @media @screen-sm {
+    &__title {
+      margin-top: 26px;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    &__item {
+      flex-direction: row;
+    }
+
+    &__list {
+      margin: 0 50px;
+    }
+
+    &__about {
+      margin-left: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    &__text {
+      text-align: left;
+    }
+
+    &__slider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__pagination {
+      display: none;
+    }
+
+    &__button {
+        display: block;
+        box-sizing: border-box;
+        padding: 0;
+        border: none;
+        background-color: #ffffff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+    }
+  }
 }

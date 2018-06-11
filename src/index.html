@@ -295,25 +295,32 @@ To emphasise this I use inline style="display: none" -->
   <section class="reviews" id="reviews">
     <div class="container">
       <h2 class="reviews__title title">Отзывы</h2>
-      <ul class="reviews__list">
-        <li class="reviews__item">
-          <picture>
-            <source media="(min-width: 320px)" srcset="img/maria-review-mobile.png 1x, img/marshmallow-cake-mobile@2x.png 2x">
-            <img src="img/maria-review.jpg" srcset="img/maria-review@2x.jpg 2x" alt="Шоколадный ганаш" class="reviews__img">
-          </picture>
-          <cite class="reviews__author">Мария</cite>
-          <span class="reviews__desc">Юрист, 33 года</span>
-          <p class="reviews__text">Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
-            <a href="#" class="reviews__link">Развернуть</a></p>
-          <span class="reviews__counter">1/26</span>
-        </li>
-      </ul>
-      <ul class="reviews__pagination">
-        <li class="reviews__dot reviews__dot--active"></li>
-        <li class="reviews__dot"></li>
-        <li class="reviews__dot"></li>
-        <li class="reviews__dot"></li>
-      </ul>
+      <div class="reviews__slider">
+        <button class="reviews__button"><--</button>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <picture>
+              <source media="(min-width: 320px)" srcset="img/maria-review-mobile.png 1x, img/marshmallow-cake-mobile@2x.png 2x">
+              <img src="img/maria-review.jpg" srcset="img/maria-review@2x.jpg 2x" alt="Шоколадный ганаш" class="reviews__img">
+            </picture>
+            <div class="reviews__about">
+              <cite class="reviews__author">Мария</cite>
+              <span class="reviews__desc">Юрист, 33 года</span>
+              <p class="reviews__text">Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
+                <a href="#" class="reviews__link">Развернуть</a></p>
+              <span class="reviews__counter">1/26</span>
+            </div>
+          </li>
+        </ul>
+        <ul class="reviews__pagination">
+          <li class="reviews__dot reviews__dot--active"></li>
+          <li class="reviews__dot"></li>
+          <li class="reviews__dot"></li>
+          <li class="reviews__dot"></li>
+        </ul>
+        <button class="reviews__button">--></button>
+      </div>
+
     </div>
   </section>
 

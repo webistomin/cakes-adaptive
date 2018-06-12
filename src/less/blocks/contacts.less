@@ -75,4 +75,42 @@
     }
   }
 
+  @media @screen-sm {
+    position: relative;
+    padding-bottom: 263px;
+    //background-image: url("../img/contacts-bg-tablet.png");
+
+    &__title {
+      font-size: 28px;
+      text-align: left;
+      line-height: initial;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__column {
+
+      &:first-of-type {
+        max-width: 346px;
+      }
+    }
+
+    &__btn {
+      margin: 0;
+      max-width: 160px;
+    }
+
+    &__message {
+      min-height: 118px;
+    }
+  }
+
 }

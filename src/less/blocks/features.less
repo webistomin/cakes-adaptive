@@ -68,4 +68,83 @@
       text-align: left;
     }
   }
+
+  @media @screen-sm {
+
+    &__title {
+      margin-top: 74px;
+      font-size: 28px;
+
+      &--left {
+        margin-top: 190px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 26px;
+      margin-bottom: 50px;
+
+      &--left {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__feature {
+      position: relative;
+
+      &--white {
+        background-color: transparent;
+      }
+
+      &--bg {
+        padding-bottom: 130px;
+        background-image: none;
+
+        &::before {
+          width: 367px;
+          height: 367px;
+          content: "";
+          position: absolute;
+          background-image: url("../img/feature-cake-talet.png");
+          right: -30px;
+          top: -92px;
+        }
+      }
+
+      &:first-of-type {
+        &::before {
+          width: 285px;
+          height: 310px;
+          position: absolute;
+          content: "";
+          background-image: url("../img/berries-tablet.png");
+          background-repeat: no-repeat;
+          top: -60px;
+          left: -68px;
+        }
+      }
+    }
+
+    &__item {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    &__wrapper {
+      max-width: 260px;
+      margin-left: 16px;
+
+      &:first-of-type {
+        margin-left: 22px;
+      }
+    }
+
+    &__text {
+      text-align: left;
+
+      &--left {
+        max-width: 300px;
+      }
+    }
+  }
 }

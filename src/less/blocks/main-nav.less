@@ -50,9 +50,45 @@
     width: auto;
     min-width: 322px;
 
+    &--opened {
+      top: 40px;
+    }
+
+    &--closed {
+      top: 40px;
+    }
+
     &__link {
       padding-top: 15px;
       padding-bottom: 11px;
+    }
+  }
+
+  @media @screen-lg {
+    position: relative;
+
+    &--closed {
+      transform: scaleY(1);
+      top: auto;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__link {
+      background-color: transparent;
+      padding-bottom: 0;
+      font-size: 13px;
+    }
+
+    &__item {
+      box-shadow: none;
+      margin-right: 44px;
+
+      &:nth-child(6) {
+        box-shadow: none;
+      }
     }
   }
 

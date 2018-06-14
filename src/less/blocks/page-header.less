@@ -94,9 +94,12 @@
 
 
   @media @screen-sm {
+    display: flex;
+    align-items: center;
+    padding-left: 46px;
+    padding-right: 46px;
+
     &__inner {
-      padding-left: 46px;
-      padding-right: 46px;
       justify-content: flex-start;
     }
 
@@ -111,6 +114,35 @@
         margin-left: auto;
         display: block;
       }
+    }
+  }
+
+  @media @screen-lg {
+    display: flex;
+    background-color: @color-bg;
+    padding-top: 50px;
+
+    &__toggler {
+      display: none;
+    }
+
+    &__inner {
+      padding: 0;
+      margin-right: 48px;
+    }
+
+    &__logo {
+      order: 1;
+      margin: 0;
+    }
+
+    &__logotype {
+      font-size: 23px;
+    }
+
+    &__link {
+      padding-top: 15px;
+      order: 3;
     }
   }
 

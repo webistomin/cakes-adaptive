@@ -169,5 +169,46 @@
     }
 
   }
+
+  @media @screen-lg {
+    &__column {
+      width: 100%;
+    }
+
+    &__item {
+      width: 100%;
+      max-width: initial;
+      min-height: 305px;
+      margin-bottom: 42px;
+
+      &--big {
+        max-width: 696px;
+        min-height: 652px;
+        margin-right: 41px;
+
+        &:nth-last-of-type(1) {
+          margin-right: 0;
+          margin-left: 42px;
+        }
+      }
+    }
+
+    &__link {
+      padding: 40px;
+      min-height: 305px;
+    }
+
+    &__category {
+      font-size: 24px;
+    }
+
+    &__counter {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+  }
 }
 

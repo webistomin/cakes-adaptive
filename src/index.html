@@ -190,7 +190,10 @@ To emphasise this I use inline style="display: none" -->
         <ul class="order__items">
           <li class="order__size">
             <figure class="order__pic order__pic--circle">
-              <img src="img/circle-s.png" alt="Маленький круг" class="order__img" width="77" height="77">
+              <picture>
+                <source media="(min-width: 1140px)" srcset="img/circle-s-desktop.png 1x, img/circle-s-desktop@2x.png 2x">
+                <img src="img/circle-s.png" alt="Маленький круг" class="order__img">
+              </picture>
               <figcaption class="order__weight order__weight--first">1 кг</figcaption>
             </figure>
             <span class="order__length">17-18 см</span>
@@ -199,7 +202,10 @@ To emphasise this I use inline style="display: none" -->
           </li>
           <li class="order__size">
             <figure class="order__pic order__pic--circle">
-              <img src="img/circle-m.png" alt="#" class="order__img" width="107" height="107">
+              <picture>
+                <source media="(min-width: 1140px)" srcset="img/circle-m-desktop.png 1x, img/circle-m-desktop@2x.png 2x">
+                <img src="img/circle-m.png" alt="#" class="order__img">
+              </picture>
               <figcaption class="order__weight order__weight--second">2 кг</figcaption>
             </figure>
             <span class="order__length">23-24 см</span>
@@ -208,7 +214,10 @@ To emphasise this I use inline style="display: none" -->
           </li>
           <li class="order__size">
             <figure class="order__pic order__pic--circle">
-              <img src="img/circle-l.png" alt="#" class="order__img" width="120" height="121">
+              <picture>
+                <source media="(min-width: 1140px)" srcset="img/circle-l-desktop.png 1x, img/circle-l-desktop@2x.png 2x">
+                <img src="img/circle-l.png" alt="#" class="order__img">
+              </picture>
               <figcaption class="order__weight order__weight--third">5 кг</figcaption>
             </figure>
             <span class="order__length">Два яруса 25 и 30 см</span>
@@ -217,7 +226,10 @@ To emphasise this I use inline style="display: none" -->
           </li>
           <li class="order__size">
             <figure class="order__pic order__pic--circle">
-              <img src="img/cirlce-xl.png" alt="#" class="order__img" width="139" height="141">
+              <picture>
+                <source media="(min-width: 1140px)" srcset="img/circle-xl-desktop.png 1x, img/circle-xl-desktop@2x.png 2x">
+                <img src="img/cirlce-xl.png" alt="#" class="order__img">
+              </picture>
               <figcaption class="order__weight order__weight--fourth">8 кг</figcaption>
             </figure>
             <span class="order__length">Три яруса 30, 25 и 18 см</span>

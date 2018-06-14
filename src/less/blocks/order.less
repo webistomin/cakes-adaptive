@@ -624,5 +624,48 @@
       font-size: 18px;
       right: -100%;
     }
+
+    &__items {
+      padding: 0 100px;
+      justify-content: center;
+    }
+
+    &__size {
+      margin-right: 75px;
+      align-items: flex-start;
+      flex-shrink: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__length,
+    &__amount {
+      font-size: 18px;
+    }
+
+    &__length {
+      min-width: 126px;
+      margin-top: 35px;
+    }
+
+    &__weight {
+      &--first {
+        top: 61%;
+      }
+
+      &--second {
+        top: 48%;
+      }
+
+      &--third {
+        top: 42%;
+      }
+
+      &--fourth {
+        top: 32%;
+      }
+    }
   }
 }

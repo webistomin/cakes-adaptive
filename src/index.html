@@ -354,9 +354,10 @@ To emphasise this I use inline style="display: none" -->
         </div>
         <div class="about__column about__column--mobile about__column--pic">
           <picture>
+            <source media="(min-width: 1140px)" srcset="img/about-us-desktop.png 1x, img/about-us-desktop.png 2x">
             <source media="(min-width: 660px)" srcset="img/about-us.png 1x, img/about-us@2x.png">
             <source media="(min-width: 320px)" srcset="img/about-us-mobile.png 1x, img/about-us-mobile@2x.png 2x">
-            <img src="img/about-us.png" srcset="img/about-us@2x.png 2x" alt="О нас" class="about__img">
+            <img src="img/about-us-desktop.png" srcset="img/about-us-desktop.png 2x" alt="О нас" class="about__img">
           </picture>
           <div class="socials ">
             <ul class="socials__list">

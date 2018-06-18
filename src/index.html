@@ -249,30 +249,32 @@ To emphasise this I use inline style="display: none" -->
           <span class="order__headline">03</span>
           <span class="order__caption">Оформление</span>
         </div>
-        <div class="order__slider">
-          <button class="order__button order__button--left" type="button"><--</button>
+        <div class="order__slider order__slider--padding">
+          <button class="order__button order__button--relative order__button--left" type="button"><--</button>
           <ul class="order__list order__list--second">
             <li class="order__item order__item--column">
               <figure class="order__pic">
                 <picture>
+                  <source media="(min-width: 1140px)" srcset="img/marshmallow-cake.jpg 1x, img/marshmallow-cake@2x.jpg 2x">
                   <source media="(min-width: 320px)" srcset="img/marshmallow-cake-mobile.png 1x, img/marshmallow-cake-mobile@2x.png 2x">
                   <img src="img/platter-cake.jpg" srcset="img/platter-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
                 </picture>
                 <figcaption class="order__counter order__counter--right order__counter--dark">1/12</figcaption>
               </figure>
 
-              <span class="order__name order__name--regular">Ягодные ассорти</span>
-              <span class="order__price">700 руб/кг</span>
+              <span class="order__name order__name--margin order__name--regular">Ягодные ассорти</span>
+              <span class="order__price order__price--margin">700 руб/кг</span>
               <button class="order__link order__link--hidden btn" type="button">Выбрать</button>
 
             </li>
             <li class="order__item order__item--column">
               <picture>
+                <source media="(min-width: 1140px)" srcset="img/marshmallow-cake.jpg 1x, img/marshmallow-cake@2x.jpg 2x">
                 <source media="(min-width: 320px)" srcset="img/marshmallow-cake-mobile.png 1x, img/marshmallow-cake-mobile@2x.png 2x">
                 <img src="img/marshmallow-cake.jpg" srcset="img/marshmallow-cake@2x.jpg 2x" alt="Шоколадный ганаш" class="order__img">
               </picture>
-              <span class="order__name order__name--regular">Маршмаллоу</span>
-              <span class="order__price">600 руб/кг</span>
+              <span class="order__name order__name--margin order__name--regular">Маршмаллоу</span>
+              <span class="order__price order__price--margin">600 руб/кг</span>
               <button class="order__link order__link--hidden btn" type="button">Выбрать</button>
             </li>
           </ul>

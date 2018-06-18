@@ -113,4 +113,26 @@
     }
   }
 
+  @media @screen-lg {
+    &__inner {
+      justify-content: flex-start;
+    }
+
+    &__column {
+      margin-right: 78px;
+
+      &:first-of-type {
+        max-width: 550px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__btn {
+      max-width: 180px;
+    }
+  }
+
 }

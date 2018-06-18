@@ -147,4 +147,52 @@
       }
     }
   }
+
+  @media @screen-lg {
+
+    &__title {
+      &--left {
+        margin-top: 400px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 35px;
+    }
+
+    &__feature {
+      &:first-of-type {
+        &::before {
+          width: 507px;
+          height: 547px;
+          background-image: url("../img/berries-desktop.png");
+          left: -82px;
+        }
+      }
+
+      &--bg {
+        &::before {
+          width: 590px;
+          height: 577px;
+          background-image: url("../img/feature-cake-desktop.png");
+          top: -100%;
+        }
+      }
+    }
+
+    &__list {
+      padding-top: 120px;
+    }
+
+    &__item {
+      justify-content: center;
+      padding-left: 200px;
+    }
+
+    &__text {
+      &--left {
+        max-width: 350px;
+      }
+    }
+  }
 }

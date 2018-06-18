@@ -584,6 +584,10 @@
     }
 
     &__pic {
+      &--circle {
+        height: auto;
+      }
+
       &--bg {
         margin-right: 42px;
       }
@@ -630,6 +634,12 @@
     &__step {
       padding: 80px;
       margin-bottom: 35px;
+
+      &--third {
+        &::before {
+          right: -70px;
+        }
+      }
     }
 
     &__link {
@@ -638,6 +648,7 @@
 
     &__slider {
       width: 100%;
+      box-sizing: border-box;
 
       &--padding {
         justify-content: flex-start;
@@ -671,6 +682,7 @@
       padding: 0 100px;
       justify-content: center;
       padding-bottom: 68px;
+      align-items: flex-end;
     }
 
     &__size {
@@ -699,19 +711,19 @@
 
     &__weight {
       &--first {
-        top: 61%;
+        top: 50%;
       }
 
       &--second {
-        top: 48%;
+        top: 50%;
       }
 
       &--third {
-        top: 42%;
+        top: 50%;
       }
 
       &--fourth {
-        top: 32%;
+        top: 50%;
       }
     }
 

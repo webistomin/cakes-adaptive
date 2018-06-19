@@ -5,6 +5,13 @@
   background-repeat: no-repeat;
   background-color: @color-bg;
 
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: url("../img/header-cake-mobile@2x.png");
+    background-size: 391px 391px;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -46,12 +53,24 @@
     &:first-child {
       &::before {
         background-image: url("../img/feature-1.png");
+
+        @media
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+          background-image: url("../img/feature-1@2x.png");
+        }
       }
     }
 
     &:last-child {
       &::before {
         background-image: url("../img/icon-delivery.png");
+
+        @media
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+          background-image: url("../img/icon-delivery@2x.png");
+        }
       }
     }
   }
@@ -67,6 +86,13 @@
     background-image: url("../img/header-cake-desktop.png");
     background-size: contain;
     background-position: right 13px;
+
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url("../img/header-cake-desktop@2x.png");
+      background-size: 768px 941px;
+    }
 
     &__title,
     &__subtitle {
@@ -104,6 +130,13 @@
     background-position: right 16px, top 44px left 41.07%, top 228px left 38.36%, top 388px left 26.21%;
     padding-bottom: 350px;
     background-size: initial;
+
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url("../img/header-cake-desktop@2x.png"), url("../img/header-decor-1@2x.png"), url("../img/header-decor-2@2x.png"), url("../img/header-decor-3@2x.png");
+      background-size: 768px 941px,111px 110px, 63px 60px, 168px 119px;
+    }
 
     &__title {
       font-size: 78px;

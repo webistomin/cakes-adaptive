@@ -454,6 +454,13 @@
       background-position: center center;
       background-repeat: no-repeat;
 
+      @media
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        background-image: url("../img/arrow@2x.png");
+        background-size: 9px 16px;
+      }
+
       &:hover {
         box-shadow: 0 2px 7px 1px rgba(255, 0, 67, 0.7);
         transition: all 0.3s ease-in-out;

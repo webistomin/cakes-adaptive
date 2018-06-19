@@ -31,6 +31,13 @@
       background-image: url("../img/feature-cake-mobile.png"), url("../img/feature-dots-mobile.png");
       background-repeat: no-repeat, no-repeat;
       background-position: center 210px, center 180px;
+
+      @media
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        background-image: url("../img/feature-cake-mobile@2x.png"), url("../img/feature-dots-mobile@2x.png");
+        background-size: 100%, 100%;
+      }
     }
   }
 
@@ -114,9 +121,16 @@
           height: 367px;
           content: "";
           position: absolute;
-          background-image: url("../img/feature-cake-talet.png");
+          background-image: url("../img/feature-cake-tablet.png");
           right: -20px;
           top: -92px;
+
+          @media
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi) {
+            background-image: url("../img/feature-cake-tablet@2x.png");
+            background-size: 367px 367px;
+          }
         }
       }
 
@@ -130,6 +144,13 @@
           background-repeat: no-repeat;
           top: -60px;
           left: -68px;
+
+          @media
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi) {
+            background-image: url("../img/berries-tablet@2x.png");
+            background-size: 294px 310px;
+          }
         }
       }
     }
@@ -161,6 +182,14 @@
     background-image: url(../img/decor-1.png), url(../img/decor-2.png), url(../img/decor-3.png), url(../img/decor-4.png);
     background-repeat: no-repeat;
     background-position: left 28% top 55%, left top 6%, left 8.16% top 0, left 28.09% top 11%;
+
+
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url(../img/decor-1@2x.png), url(../img/decor-2@2x.png), url(../img/decor-3@2x.png), url(../img/decor-4@2x.png);
+      background-size: 167px 132px, 52px 54px, 103px 148px, 51px 48px;
+    }
 
 
     &__wrapper {
@@ -199,11 +228,25 @@
         background-image: url("../img/feature-dots-desktop.png");
         background-position: 500px 30px;
 
+        @media
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+          background-image: url("../img/feature-dots-desktop@2x.png");
+          background-size: 768px 802px;
+        }
+
         &::before {
           width: 649px;
           height: 651px;
           background-image: url("../img/feature-cake-desktop.png");
           top: 90px;
+
+          @media
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi) {
+            background-image: url("../img/feature-cake-desktop@2x.png");
+            background-size: 649px 651px;
+          }
         }
       }
     }

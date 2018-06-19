@@ -6,6 +6,12 @@
   background-repeat: no-repeat;
   background-position: center 100%;
 
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: url("../img/delivery-bg-mobile@2x.jpg");
+  }
+
   &__title {
     color: #ffffff;
     font-size: 24px;
@@ -75,6 +81,13 @@
     background-image: url("../img/delivery-bg-tablet.jpg");
     background-size: cover;
 
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url("../img/delivery-bg-tablet@2x.jpg");
+    }
+
+
     &__title {
       font-size: 28px;
     }
@@ -106,6 +119,12 @@
   @media @screen-lg {
     background-image: url("../img/delivery-bg-desktop.jpg");
     background-size: 100%;
+
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url("../img/delivery-bg-desktop@2x.jpg");
+    }
 
     &__info {
       max-width: 555px;

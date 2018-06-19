@@ -117,6 +117,13 @@
     background: #fbebea url(../img/footer-cake.png) no-repeat right -145px bottom;
     background-blend-mode: multiply;
 
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url("../img/footer-cake@2x.png");
+      background-size: 886px 636px;
+    }
+
     &__inner {
       justify-content: flex-start;
     }

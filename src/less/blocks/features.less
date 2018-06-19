@@ -183,7 +183,15 @@
           width: 507px;
           height: 547px;
           background-image: url("../img/berries-desktop.png");
-          left: -82px;
+          left: 12%;
+          transform: translateX(-50%);
+
+          @media
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi) {
+            background-image: url("../img/berries-desktop@2x.png");
+            background-size: 507px 547px;
+          }
         }
       }
 

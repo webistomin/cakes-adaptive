@@ -93,15 +93,20 @@
       }
     }
 
+    &__wrapper {
+    text-align: left;
+  }
+
     &__feature {
       position: relative;
 
       &--white {
         background-color: transparent;
+        margin: 0;
       }
 
       &--bg {
-        padding-bottom: 130px;
+        padding-bottom: 140px;
         background-image: none;
 
         &::before {
@@ -110,7 +115,7 @@
           content: "";
           position: absolute;
           background-image: url("../img/feature-cake-talet.png");
-          right: -30px;
+          right: -20px;
           top: -92px;
         }
       }
@@ -153,6 +158,10 @@
   }
 
   @media @screen-lg {
+    background-image: url(../img/decor-1.png), url(../img/decor-2.png), url(../img/decor-3.png), url(../img/decor-4.png);
+    background-repeat: no-repeat;
+    background-position: left 28% top 55%, left top 6%, left 8.16% top 0, left 28.09% top 11%;
+
 
     &__wrapper {
       text-align: left;
@@ -160,7 +169,7 @@
 
     &__title {
       &--left {
-        margin-top: 400px;
+        padding-top: 450px;
       }
     }
 
@@ -179,11 +188,14 @@
       }
 
       &--bg {
+        background-image: url("../img/feature-dots-desktop.png");
+        background-position: 500px 30px;
+
         &::before {
-          width: 590px;
-          height: 577px;
+          width: 649px;
+          height: 651px;
           background-image: url("../img/feature-cake-desktop.png");
-          top: -100%;
+          top: 90px;
         }
       }
     }
@@ -195,6 +207,10 @@
     &__item {
       justify-content: center;
       padding-left: 200px;
+
+      &--padding {
+        padding-left: 178px;
+      }
     }
 
     &__text {

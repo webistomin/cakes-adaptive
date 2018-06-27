@@ -221,6 +221,7 @@ html {
 body {
   margin: 0;
   font-weight: 400;
+  background-color: #fbebea;
 }
 img {
   max-width: 100%;
@@ -435,6 +436,8 @@ picture {
     padding-top: 50px;
     padding-left: 73px;
     padding-right: 73px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
   .page-header__toggler {
     display: none;
@@ -1838,6 +1841,10 @@ picture {
   .about__text {
     font-size: 18px;
   }
+  .about__picture,
+  .about__img {
+    width: 100%;
+  }
 }
 .socials__link {
   display: flex;
@@ -2100,11 +2107,6 @@ picture {
   }
 }
 @media (min-width: 1180px) {
-  .features {
-    background-image: url(../img/decor-1.png), url(../img/decor-2.png), url(../img/decor-3.png), url(../img/decor-4.png);
-    background-repeat: no-repeat;
-    background-position: left 28% top 55%, left top 6%, left 8.16% top 0, left 28.09% top 11%;
-  }
   .features__wrapper {
     text-align: left;
   }
@@ -2113,6 +2115,11 @@ picture {
   }
   .features__subtitle {
     font-size: 35px;
+  }
+  .features__feature:first-of-type {
+    background-image: url(../img/decor-1.png), url(../img/decor-2.png), url(../img/decor-3.png), url(../img/decor-4.png);
+    background-repeat: no-repeat;
+    background-position: left 32% top 55%, left top 6%, left 8.16% top 0, left 28.09% top 11%;
   }
   .features__feature:first-of-type::before {
     width: 507px;
@@ -2147,7 +2154,7 @@ picture {
   }
 }
 @media (min-width: 1180px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1180px) and (min-resolution: 192dpi) {
-  .features {
+  .features__feature:first-of-type {
     background-image: url(../img/decor-1@2x.png), url(../img/decor-2@2x.png), url(../img/decor-3@2x.png), url(../img/decor-4@2x.png);
     background-size: 167px 132px, 52px 54px, 103px 148px, 51px 48px;
   }

@@ -179,17 +179,6 @@
   }
 
   @media @screen-lg {
-    background-image: url(../img/decor-1.png), url(../img/decor-2.png), url(../img/decor-3.png), url(../img/decor-4.png);
-    background-repeat: no-repeat;
-    background-position: left 28% top 55%, left top 6%, left 8.16% top 0, left 28.09% top 11%;
-
-
-    @media
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
-      background-image: url(../img/decor-1@2x.png), url(../img/decor-2@2x.png), url(../img/decor-3@2x.png), url(../img/decor-4@2x.png);
-      background-size: 167px 132px, 52px 54px, 103px 148px, 51px 48px;
-    }
 
 
     &__wrapper {
@@ -208,6 +197,19 @@
 
     &__feature {
       &:first-of-type {
+
+        background-image: url(../img/decor-1.png), url(../img/decor-2.png), url(../img/decor-3.png), url(../img/decor-4.png);
+        background-repeat: no-repeat;
+        background-position: left 32% top 55%, left top 6%, left 8.16% top 0, left 28.09% top 11%;
+
+
+        @media
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+          background-image: url(../img/decor-1@2x.png), url(../img/decor-2@2x.png), url(../img/decor-3@2x.png), url(../img/decor-4@2x.png);
+          background-size: 167px 132px, 52px 54px, 103px 148px, 51px 48px;
+        }
+
         &::before {
           width: 507px;
           height: 547px;
